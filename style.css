@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b2a27;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.tabs {
+    width: 100%;
+    max-width: 900px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+}
+
+
+.tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.tab-buttons input {
+    display: none;
+}
+
+.tab-buttons label {
+    padding: 0.6rem 1.2rem;
+    background-color: #ddd;
+    border-radius: 999px; /* fully rounded */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.tab-buttons label:hover {
+    background-color: #bbb;
+}
+
+#tab-intro:checked ~ label[for="tab-intro"],
+#tab-logboek:checked ~ label[for="tab-logboek"],
+#tab-ontwikkeling:checked ~ label[for="tab-ontwikkeling"],
+#tab-opdrachten:checked ~ label[for="tab-opdrachten"],
+#tab-reflecties:checked ~ label[for="tab-reflecties"] {
+    background-color: #333;
+    color: white;
+}
+
+.tab-content {
+    background-color: #1F1A17;
+    border-radius: 16px;
+    padding: 1.5rem;
+    color: #EDE7DF;
+}
+
+.content {
+    display: none;
+}
+
+#tab-intro:checked ~ .tab-content .intro,
+#tab-logboek:checked ~ .tab-content .logboek,
+#tab-ontwikkeling:checked ~ .tab-content .ontwikkeling,
+#tab-opdrachten:checked ~ .tab-content .opdrachten,
+#tab-reflecties:checked ~ .tab-content .reflecties {
+    display: block;
+}
+
+
+.content h2 {
+    margin-bottom: 0.75rem;
+}
+
+.content h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.content p {
+    margin-bottom: 0.75rem;
+}
+
+.content ul {
+    padding-left: 1.2rem;
+}
+
+.content li {
+    margin-bottom: 0.3rem;
+}

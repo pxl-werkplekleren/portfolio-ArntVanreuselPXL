@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Portfolio</h1>
-  <h2>Vanreusel Arnt</h2>
+
+<header>
+    <h1>Portfolio</h1>
+</header>
+
+<main class="tabs">
+
+    <input type="radio" name="tab" id="tab-intro" checked>
+    <input type="radio" name="tab" id="tab-logboek">
+    <input type="radio" name="tab" id="tab-ontwikkeling">
+    <input type="radio" name="tab" id="tab-opdrachten">
+    <input type="radio" name="tab" id="tab-reflecties">
+
+    <!-- Tabs navigation -->
+    <nav class="tab-buttons">
+        <label for="tab-intro">Inleiding</label>
+
+        <label for="tab-logboek">Logboek</label>
+
+        <label for="tab-ontwikkeling">Ontwikkeling</label>
+
+        <label for="tab-opdrachten">Opdrachten</label>
+
+        <label for="tab-reflecties">Reflecties</label>
+    </nav>
+
+    <section class="tab-content">
+
+        <section class="content intro">
+            <h2>Inleiding</h2>
+            <p>
+                In dit portfolio stel ik mezelf voor en geef ik een overzicht van mijn vaardigheden en ontwikkeling binnen het graduaat Programmeren.
+                Ik heb een sterke interesse in IT en wil later aan de slag gaan als programmeur.<br><br>
+
+                Doorheen het schooljaar heb ik gewerkt aan verschillende programmeeropdrachten en projecten die mijn technische kennis en probleemoplossend denken tonen.
+                Dit portfolio bevat voorbeelden van mijn code, projecten en de competenties die ik heb opgebouwd.<br><br>
+
+                Daarnaast reflecteer ik over mijn leerproces, mijn aanpak en mijn groei als beginnend ontwikkelaar.<br><br>
+
+                Buiten de opleiding heb ik een grote interesse in gamen en game development.
+                Ook ben ik bezig met piano spelen en muziek maken, met het idee om deze creativiteit later te combineren met eigen games.<br><br>
+
+                Met dit portfolio wil ik tonen wat ik kan, hoe ik werk en hoe ik mij verder wil ontwikkelen binnen de IT-sector.
+            </p>
+        </section>
+
+        <section class="content logboek">
+            <h2>Logboek</h2>
+            <ul>
+                <li>Week 1: HTML</li>
+                <li>Week 2: CSS</li>
+            </ul>
+        </section>
+
+        <section class="content ontwikkeling">
+            <h2>Ontwikkeling</h2>
+
+            <h3>Keuze voor de opleiding</h3>
+            <p>Ik koos deze opleiding omdat ik graag programmeer.</p>
+
+            <h3>Competenties</h3>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>Problemen oplossen</li>
+            </ul>
+        </section>
+
+        <section class="content opdrachten">
+            <h2>Opdrachten</h2>
+            <ul>
+                <li>Portfolio</li>
+                <li>Website</li>
+            </ul>
+        </section>
+
+        <section class="content reflecties">
+            <h2>Reflecties</h2>
+            <p>Ik heb veel bijgeleerd.</p>
+        </section>
+
+    </section>
+</main>
+
+<footer>
+    <p>
+        Arnt Vanreusel<br>
+        1PROc
+    </p>
+</footer>
+
 </body>
 </html>
